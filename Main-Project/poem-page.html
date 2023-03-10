@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <title>Poem Page</title>
+  </head>
+  <body>
+        
+
+        <main>
+          <div class="text" style="z-index: 10;">
+          <h1>Snowball</h1>
+          
+          <h2>I made myself a snowball
+            <br>
+            As perfect as could be.
+            <br>
+            I thought I'd keep it as a pet
+            <br>
+            And let it sleep with me.
+            <br>
+            I made it some pajamas
+            <br>
+            And a pillow for its head.
+            <br>
+            Then last night it ran away,
+            <br>
+            But first it wet the bed.</h2>
+
+            <div class="fade-in-image"  id="rain">
+             <img style="position:absolute; top:350px ; left:450px; width:200px; height:200px; z-index: 20;" src="rain.png">
+            </div>
+
+            <div id="snowball" style="position:absolute; top:536px; left:600px; width:200px; height:200px; z-index: 20;">
+              <img style="display: block; width: 100%; height: auto;" src="snowball.png">
+           </div>
+
+            
+            <div class="fade-in-image"  id="water1" style="position:absolute; top:536px; left:600px; width:200px; height:200px; z-index: 20;">
+              <img style="display: block; width: 100%; height: auto;" src="water.png">
+           </div>
+        </main>
+    
+    <script src="poem-sketch.js"></script>
+  </body>
+</html>

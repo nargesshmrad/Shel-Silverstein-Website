@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
+  <title>Home Page</title>
+
+  <style>
+
+    @media(min-width: 2000px) {
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    }
+
+    .snowball-title {
+      position: absolute;
+      top: 295px;
+      left: 315px;
+      z-index: 2;
+    }
+
+    .acrobats-title {
+      position: absolute;
+      top: 300px;
+      left: 1265px;
+      z-index: 2;
+    }
+    .instruction-title {
+      position: absolute;
+      top: 10 px;
+      left: 20px;
+      z-index: 2;
+    }
+
+    canvas {
+      position: relative;
+      top: 0;
+    }
+
+    @media(max-width: 500px) {
+      canvas,
+      .snowball-title,
+      .acrobats-title {
+        display: none;
+      }
+    }
+
+    .wrapper {
+      position: relative;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <main class="wrapper">
+
+
+    <audio controls hidden id="myAudio">
+      <source src="snooze.mp3" type="audio/mpeg">
+    </audio>
+
+    <h2 class="snowball-title link">Snowball</h2>
+    <h2 class="acrobats-title link">Acrobats</h2>
+    <p class="instruction-title link">Jump to make rain drops fall, jump to say hi, jump to melt the snow</p>
+
+
+    <div class="fade-in-image" id="second-rain" style="position:absolute; top:270px; left:270px; width:200px; height:160px; z-index: 20;">
+      <img src="rain2.png" style="display: block; width: 100%; height: auto;">
+    </div>
+
+    <div class="fade-in-image" id="third-rain" style="position:absolute; top:270px; left:1225px; width:190px; height:100px; z-index: 20;" >
+      <img src="rain2.png" style="display: block; width: 100%; height: auto;">
+    </div>
+
+
+  </main>
+  <script src="sketch.js"></script>
+</body>
+
+</html>
